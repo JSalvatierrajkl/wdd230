@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik:wght@300;400;500&display=swap');
+/*Colors: #8ECAE6; #219EBC; #023047; #FFB703; #FB8500*/
+
+body {
+    background-color: white;
+    color: #023047;
+    margin: 10px;
+    padding: 10px;
+}
+
+#headerimage {
+    height: 330px;
+}
+#menu{
+    display: none;
+}
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+}
+
+#card-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px; /* Add spacing between columns */
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #FFB703;  
+}
+#course-title {
+    text-align: center;
+}
+
+
+
+#information-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+#LA-title{
+    text-align: center;
+}
+
+.active::before {
+    content: "🟠 ";
+}
+
+
+@media screen and (max-width: 1000px) {
+    .form {
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        color: white;
+        background-color: #275434;
+        padding: 20px;
+        width: 350px;
+        font-family: "Rubik Dirt", Arial, sans-serif;;
+      }
+    
+    #headerimage {
+        height: 7em;
+        width: 7em;
+    }
+    
+    main {
+        max-width: 1000px;
+        min-width: fit-content;
+        margin: 0 auto;
+        padding: 20px;
+        display: block;
+    }
+    
+    #course-title {
+        text-align: center;
+    }
+    #card-container{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        display: block;
+        margin-bottom: 20px; 
+    }
+    .card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        background-color: #FFB703; 
+        margin-bottom: 25px 
+    }
+    
+    /*small view navigation*/
+    #menu {
+        display: block;
+    }
+}
