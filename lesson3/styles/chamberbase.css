@@ -22,13 +22,23 @@ section{
     max-height: 1200px;
 }
 
-.image {
-    display: flex;
+.image-box {
+    /* display: flex;
     justify-content: center;
     height: 85%;
     max-width: 1500px;
-    gap: 25px;
+    gap: 25px; */
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    margin: 0 auto;
+    gap: 5px;
+    padding: 20px;
 }
+
+img{
+    height: 40%;
+}
+
 #menu{
     display: none;
 }
