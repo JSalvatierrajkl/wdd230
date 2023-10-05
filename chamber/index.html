@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joel Salvatierra - WDD 230 - Chamber of Commerce Site</title>
+    <meta name="description"content="This is the WDD 230 - Web Frontend Development course assignment portal made by Joel Salvatierra. Here I applied every adquired knowledge to make a chamber of commerce site where the focus is implemented on give to users the capacity to find contacts, dates, activities and more." />
+    <meta name="author" content="Joel Salvatierra" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" />
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
+    <meta property="og:title" content="Joel Salvatierra" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/bsas.jpg" />
+    <meta property="og:url" content="https://jsalvatierrajkl.github.io/wdd230/" />
+</head>
+<body>
+    <header>
+        <img id = "logo" src="images/localcomnexuslogo.png" alt="LocalCom Nexus logo">
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+         
+    </header>
+    
+    
+    
+    <main>
+        <img id = "hero-image" src="images/hero-image.jpg" alt="Hero Image of commerce">
+        <section id="events-weather">
+            <section id="events-container">
+                <h3 id="events-title">Events</h3>
+                <section class="card">
+                    <img class = "card-image" src="images/treasury-building.jpg" alt="Event photo">
+                    <p> This is an example of an event for a important meeting among our most successfull members and partners</p>
+                </section>
+                <section class="card">
+                    <img class = "card-image" src="images/digital-marketing.jpg" alt="Event photo">
+                    <p> This is an example of an event for a important meeting for knowing more about digital markenting</p>
+                </section>
+                <section class="card">
+                    <img class = "card-image" src="images/finance.jpg" alt="Event photo">
+                    <p> This is an example of an event for a important meeting for getting into the finance mood by taking all the advises as posible.</p>
+                </section>
+            </section>
+            <section id="weather-container">
+                <h3>Weather</h3>
+                <section id= "weather-information">
+                    <!-- Placeholder information about weather, number of visits to the page, etc -->
+                    <p>Sunny</p>
+                    <p>24°C</p>
+                </section>
+            </section>
+        </section>
+        <section class="news-aboutus-container">
+            <h3 id="news-title">News</h3>
+            <section id="new-card">
+                <img class = "news-image" src="images/news.jpg" alt="Event photo">
+                <p> This is an example of a new section where in the future I will scroll horizontally for seeing all the news</p>
+            </section>
+        </section>
+        <section class="news-aboutus-container">
+            <h3 id="news-aboutus-title">About Us</h3>
+            <section id="news-card">
+                <p>We are a trusted hub for business growth and community development. Our mission is clear: to empower businesses, foster collaboration, and drive economic prosperity.</p>
+                <p>Some of our services include networking events, advocacy and lobbying, business resources, community involvement and a myriad of trainings that can help all members of this group.</p>
+                <p>Join us, whether you're a local business owner, an entrepreneur, or a community member, and be part of our vibrant business community. Together, we shape a brighter future for your businesses.</p>
+                <button id="joinus" href="#">Join Us</button>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p> WDD 230 Project</p>
+        <p> <span id="currentYear"></span> Joel Salvatierra - Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="/wdd230/scripts/script.js"></script>
+</body>
+</html>

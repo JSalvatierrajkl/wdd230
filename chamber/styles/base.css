@@ -1,0 +1,100 @@
+#hero-image{
+    width: 100%;
+}
+#events-weather{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#events-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    gap: 30px;
+    text-align: justify;
+}
+#events-title{
+    grid-column: 1/4;
+    text-align: center;
+}
+.card-image{
+    width: 100%;
+    box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
+    border-radius: 5%;
+}
+#weather-container{
+    padding: 30px;
+    text-align: center;
+}
+#weather-information{
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #FFB703;
+    border-radius: 3%;
+}
+.news-aboutus-container{
+    display: grid;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 30px;
+    text-align: center;
+}
+#news-aboutus-title{
+    text-align: center;
+}
+.card-image{
+    width: 100%;
+    box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
+    border-radius: 5%;
+}
+.news-image{
+    width: 80%;
+    box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
+    border-radius: 3%;
+}
+p{
+    text-align: justify;
+}
+#joinus{
+    padding: 8px 28px;
+    border-radius: 20px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #023047;
+    color: #FFB703;
+}
+#joinus:hover {
+    box-shadow: 0 0 5px #FB8500, 0 0 25px #FB8500, 0 0 50px #FB8500, 0 0 200px #FB8500;
+    background-color: #FB8500;
+    color: #023047;
+    transition: .5s;
+    font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+    #events-weather{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #events-container{
+        display: block;
+        text-align: justify;
+    }
+    .card{
+        padding: 40px;
+    }
+    #events-container{
+        padding: 0px;
+    }
+    .news-aboutus-container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
