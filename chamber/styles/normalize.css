@@ -23,9 +23,6 @@ header {
 #logo {
     height: 100px;
 }
-nav {
-    display: grid;
-}
 main{
     background-color: #FFB703;
 }
