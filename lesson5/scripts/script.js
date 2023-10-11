@@ -1,7 +1,7 @@
 
 // make variables to the input, button, and list elements
 const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
+const button = document.querySelector('#submit');
 const list = document.querySelector('#list');
 
 // Add a click event listener to the Add Chapter button
