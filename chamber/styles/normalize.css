@@ -152,7 +152,6 @@ nav li a {
     }
 
     .navigation {
-        display: flex;
         flex-direction: column;
         list-style: none;
         background-color: #023047;
