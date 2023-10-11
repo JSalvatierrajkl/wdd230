@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+#menu {
+    display: none;
+}
+
 body {
 	height: 100vh;
 	text-align: center;
@@ -66,4 +70,8 @@ li {
 	main {
 		width: 320px;
 	}
+}
+
+#menu {
+    display: block;
 }
