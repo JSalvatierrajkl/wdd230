@@ -33,6 +33,21 @@
     color: #023047;
     border-radius: 3%;
 }
+#members{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
+}
+.m-card{
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #FFB703;
+    color: #023047;
+    border-radius: 3%;
+}
 .news-aboutus-container{
     display: grid;
     margin-left: 20%;
@@ -53,9 +68,7 @@
     box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
     border-radius: 3%;
 }
-p{
-    text-align: justify;
-}
+
 #joinus{
     padding: 8px 28px;
     border-radius: 20px;
@@ -92,6 +105,12 @@ p{
     }
     #events-container{
         padding: 0px;
+    }
+    #members{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-items: center;
     }
     .news-aboutus-container{
         margin-left: 0px;
