@@ -23,6 +23,10 @@ header {
 #logo {
     height: 100px;
 }
+#mode {
+	font-size: 3rem;
+	cursor: pointer;
+}
 main{
     background-color: #FFB703;
 }
@@ -30,13 +34,13 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #023047;
-    color: #FB8500;
+    color: #FFB703;
 }
 header {
     text-align: left;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
     justify-items: center;
 }
@@ -47,7 +51,7 @@ nav ul {
     padding: 0;
     background-color: #023047;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 125px;
 }
 
@@ -57,7 +61,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: #FB8500;
+    color: #FFB703;
     padding: 5px;
     text-align: center;
     text-decoration: none;
@@ -107,7 +111,7 @@ nav li a {
         display: block;
         padding: 5px;
         background-color: #023047;
-        color: #FB8500;
+        color: #FFB703;
         text-decoration: none;
         align-items: center;
         margin: 0 auto;
@@ -121,7 +125,7 @@ nav li a {
     
     nav li a {
         display: block;
-        color: #FB8500;
+        color: #FFB703;
         padding: 5px;
         text-align: center;
         text-decoration: none;
@@ -155,7 +159,7 @@ nav li a {
         flex-direction: column;
         list-style: none;
         background-color: #023047;
-        color: #FB8500;
+        color: #FFB703;
     }
     .navigation li {
         display: none;
@@ -165,7 +169,7 @@ nav li a {
         padding: 1rem;
         text-align: center;
         text-decoration: none;
-        color: #FB8500;
+        color: #FFB703;
     }
     
 

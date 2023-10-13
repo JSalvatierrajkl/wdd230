@@ -14,3 +14,19 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+// Dark Mode
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("☁")) {
+		main.style.background = "#023047";
+		main.style.color = "#FFB703";
+		modeButton.textContent = "🌅";
+	} else {
+		main.style.background = "#FFB703";
+		main.style.color = "#023047";
+		modeButton.textContent = "☁";
+	}
+});
