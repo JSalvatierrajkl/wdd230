@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik:wght@300;400;500&display=swap');
-/*Colors: #8ECAE6; #219EBC; #023047; #FFB703; #FB8500*/
+/*Colors: (#282828 gray) #8ECAE6; #219EBC; #023047; #FFB703; #FB8500*/
 body {
     /*font-family: 'PT Serif', serif;*/
     font-family: 'Rubik', sans-serif;
@@ -51,7 +51,7 @@ nav ul {
     padding: 0;
     background-color: #023047;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
     gap: 125px;
 }
 
@@ -171,7 +171,10 @@ nav li a {
         text-decoration: none;
         color: #FFB703;
     }
-    
+    #mode {
+        font-size: 2rem;
+        cursor: pointer;
+    }
 
     /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
     .open li {

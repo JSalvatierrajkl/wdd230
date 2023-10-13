@@ -19,7 +19,7 @@
 }
 .card-image{
     width: 100%;
-    box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
+    box-shadow: 0 0 3px #282828, 0 0 10px #282828, 0 0 25px #282828, 0 0 90px #282828;
     border-radius: 5%;
 }
 #weather-container{
@@ -30,6 +30,7 @@
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #FFB703;
+    color: #023047;
     border-radius: 3%;
 }
 .news-aboutus-container{

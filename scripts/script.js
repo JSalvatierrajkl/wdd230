@@ -21,7 +21,7 @@ const main = document.querySelector("main");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("☁")) {
-		main.style.background = "#023047";
+		main.style.background = "#282828";
 		main.style.color = "#FFB703";
 		modeButton.textContent = "🌅";
 	} else {
