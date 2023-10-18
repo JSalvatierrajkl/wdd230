@@ -12,6 +12,40 @@ body {
 #headerimage {
     height: 330px;
 }
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	/*height: 300px;*/
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 80%;
+	left: 0;
+    right: 0;
+	background: radial-gradient(#fcd5a8, #FB8500);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel h2 {
+    text-align: center;
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"PT Serif", serif;
+}
+
 #menu{
     display: none;
 }
@@ -80,6 +114,19 @@ main {
         padding: 20px;
         display: block;
     }
+    .herolabel {
+        position: absolute;
+        bottom: 5%;
+        padding: 0;
+    }
+    .herolabel h2 {
+        text-align: center;
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-family:"PT Serif", serif;
+    }
     
     #course-title {
         text-align: center;
@@ -101,5 +148,17 @@ main {
     /*small view navigation*/
     #menu {
         display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .herolabel h2 {
+        text-align: center;
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 1rem;
+        font-family:"PT Serif", serif;
     }
 }
