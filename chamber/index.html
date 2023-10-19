@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <img id = "logo" src="images/localcomnexuslogo.png" alt="LocalCom Nexus logo">
+        <img id = "logo" src="images/localcomnexuslogo.webp" alt="LocalCom Nexus logo">
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
@@ -36,7 +36,13 @@
     
     
     <main>
-        <img id = "hero-image" src="images/hero-image.jpg" alt="Hero Image of commerce">
+        <div class="hero">
+            <picture>
+              <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+              <source srcset="images/hero_medium.webp" media="(max-width: 1200px)">
+              <img src="images/hero_large.webp" alt="Hero Image of commerce" width="1900" height="800">
+            </picture>
+        </div>
         <section id="events-weather">
             <section id="events-container">
                 <h3 id="events-title">Events</h3>
@@ -54,11 +60,12 @@
                 </section>
             </section>
             <section id="weather-container">
-                <h3>Weather</h3>
+                <h3>Weather 🌞</h3>
                 <section id= "weather-information">
                     <!-- Placeholder information about weather, number of visits to the page, etc -->
-                    <p>Sunny</p>
-                    <p>24°C</p>
+                    <span id="temperature">32</span> °F 🌡/
+                    <span id="windspeed">5</span> mph 🌫
+                    <p>⛱ Wind Chill: <span id="windchill">N/A</span></p>
                 </section>
             </section>
         </section>
@@ -109,7 +116,9 @@
         <p> <span id="currentYear"></span> Joel Salvatierra - Argentina</p>
         <p id="lastModified"></p>
     </footer>
-
+    <!-- <script src="/scripts/windchill.js"></script>
+    <script src="/scripts/script.js"></script> -->
     <script src="/wdd230/scripts/script.js"></script>
+    <script src="/wdd230/scripts/windchill.js"></script>
 </body>
 </html>

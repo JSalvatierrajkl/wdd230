@@ -1,5 +1,6 @@
-#hero-image{
+.hero img {
     width: 100%;
+    height: auto;
 }
 #events-weather{
     display: grid;
@@ -32,6 +33,7 @@
     background-color: #FFB703;
     color: #023047;
     border-radius: 3%;
+    margin-top: 80px
 }
 #members{
     display: grid;
