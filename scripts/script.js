@@ -15,6 +15,25 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+// Initialize display elements
+const visitsDisplay = document.getElementById("visits");
+// Get the stored value in Local Storage
+let numVisits = window.localStorage.getItem("visits-ls");
+if (numVisits === null) {
+  // If there's no stored value, initialize it to 0
+  numVisits = 0;
+} else {
+  // If there's a stored value, parse it as an integer
+  numVisits = parseInt(numVisits);
+}
+// Display the number of visits
+visitsDisplay.textContent = numVisits;
+// Increment the number of visits
+numVisits++;
+// Store the new number
+localStorage.setItem("visits-ls", numVisits);
+
+
 // Dark Mode
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
