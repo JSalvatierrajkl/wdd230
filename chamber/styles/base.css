@@ -93,6 +93,67 @@
     transition: .5s;
     font-weight: 700;
 }
+
+.discover {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.dcard{
+    grid-column: 1;
+    text-align: center;
+    display: block;
+}
+
+.gallery{
+    grid-column: 2;
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 25px;
+    margin: 0 auto;
+    border-radius: 15px 100px;
+    text-align: center;
+}
+
+
+.cards {
+    grid-column: 1;
+    grid-row: 1/6;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.calendar{
+    margin-top: 80px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.calendar iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.gallery img{
+    border-radius: 15px 100px;
+    width: 100%;
+    box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
+}
+
+
+.gallery img:hover{
+    box-shadow: 0 0 5px #FB8500, 0 0 25px #FB8500, 0 0 50px #FB8500, 0 0 200px #FB8500;
+    transition: .5s;
+}
 @media screen and (max-width: 1200px) {
     #events-weather{
         display: grid;
@@ -118,5 +179,13 @@
         margin-left: 0px;
         margin-right: 0px;
     }
-
+    .discover {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        gap: 100px;
+    }
+    .gallery img:hover{
+        box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
+    }
 }
