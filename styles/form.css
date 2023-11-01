@@ -1,0 +1,100 @@
+/* Define :root variables */
+:root {
+    --main-bg-color: #f2f2f2; 
+    --font-color: #333; 
+    --border-color: #ccc; 
+    --highlight-color: #007bff; 
+    --error-color: #ff0000;
+  }
+
+  /* Form */
+  form {
+    margin: 2rem auto;
+    max-width: 600px;
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Form elements label */
+  form label {
+    display: block;
+    font-size: 1rem;
+    color: var(--font-color);
+    margin-bottom: 5px;
+  }
+
+  /* Text input and password input */
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: white;
+    color: var(--font-color);
+    margin-bottom: 15px;
+  }
+
+  /* Highlight required fields */
+  form input:required {
+    border-color: var(--highlight-color);
+  }
+
+  /* Valid input */
+  form input:required:valid {
+    border-color: green;
+  }
+
+  /* Error message */
+  form input:invalid {
+    border-color: var(--error-color);
+  }
+
+  /* Range input  */
+  form input[type="range"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Output Range input */
+  form output {
+    display: block;
+    color: var(--font-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Submit button */
+  form input[type="submit"] {
+    display: block;
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  /* Alignment and proximity */
+  form fieldset {
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  /* Readability and accessibility */
+  form legend {
+    color: var(--highlight-color);
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 0 5px;
+  }
+  
