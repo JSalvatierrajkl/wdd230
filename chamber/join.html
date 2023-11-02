@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joel Salvatierra - WDD 230 - Chamber of Commerce Site</title>
+    <meta name="description" content="This is the WDD 230 - Web Frontend Development course assignment portal made by Joel Salvatierra. Here I applied every adquired knowledge to make a chamber of commerce site where the focus is implemented on give to users the capacity to find contacts, dates, activities and more." />
+    <meta name="author" content="Joel Salvatierra" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" />
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
+    <meta property="og:title" content="Joel Salvatierra" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/bsas.jpg" />
+    <meta property="og:url" content="https://jsalvatierrajkl.github.io/wdd230/" />
+</head>
+<body>
+    <header>
+        <img id = "logo" src="images/localcomnexuslogo.webp" alt="LocalCom Nexus logo">
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="/wdd230/chamber/discover.html" >Discover</a></li>
+                <li><a href="/wdd/chamber/join.html" class="active">Join Us</a></li>
+                <li><a id="mode">☁</a></li>
+            </ul>
+        </nav>
+         
+    </header>
+    
+    <main>
+        <section class="joinmain">
+            <section>
+            <h1>Membership Benefits</h1>
+                <table>
+                    <caption>Membership Levels and Benefits</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">NP Membership</th>
+                            <th scope="col">Bronze Membership</th>
+                            <th scope="col">Silver Membership</th>
+                            <th scope="col">Gold Membership</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mensual Cost</td>
+                            <td>Free</td>
+                            <td>$50</td>
+                            <td>$100</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <td>Normal Events</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Training</td>
+                            <td>✖</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Special Events</td>
+                            <td>✖</td>
+                            <td>✖</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Advertising</td>
+                            <td>✖</td>
+                            <td>✖</td>
+                            <td>✖</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Event Discounts</td>
+                            <td>✖</td>
+                            <td>✖</td>
+                            <td>✖</td>
+                            <td>✔</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <form method="get" action="thankyou.html">
+                <legend>Membership Form</legend>
+                <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name*<input type="text" name="first-name" required></label>
+                <label class="top">Last Name*<input type="text" name="last-name" required></label>
+                <label class="top">Title or Position<input type="text" name="position" pattern="[A-Za-z\s\-]{7,}" title="Must contain only letters, spaces, and hyphens, with a minimum of  7 characters."></label>
+                <label class="top">Email*<input type="email" name="email"required placeholder="someone@gmail.com"></label>
+                <label class="top">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
+                </fieldset>
+                <fieldset>
+                <legend>Business/Organization Information</legend>
+                <label class="top">Business/Organization Name*<input type="text" name="organization" required></label>
+                <div>Membership Level:*</div>
+                    <label class="sbs"><input type="radio" name="audience" value="np">NP Membership (Free)</label>
+                    <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="audience" value="silver">Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="audience" value="gold">Gold Membership</label>
+                
+                <label class="top">Business/Organization Description: <textarea name="description" id="description"></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp" value="Timestamp Placeholder">
+                </fieldset>
+                <input  type="submit" value="Join in" class="submitBtn">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p> WDD 230 Project</p>
+        <p> <span id="currentYear"></span> Joel Salvatierra - Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+    <!-- <script src="/scripts/windchill.js"></script>
+    <script src="/scripts/script.js"></script> -->
+    <script src="/wdd230/scripts/script.js"></script>
+    <script src="/wdd230/scripts/windchill.js"></script>
+</body>
+</html>
