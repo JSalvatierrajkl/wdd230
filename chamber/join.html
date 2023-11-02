@@ -95,30 +95,33 @@
                     </tbody>
                 </table>
             </section>
-            <form method="get" action="thankyou.html">
-                <legend>Membership Form</legend>
-                <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">First Name*<input type="text" name="first-name" required></label>
-                <label class="top">Last Name*<input type="text" name="last-name" required></label>
-                <label class="top">Title or Position<input type="text" name="position" pattern="[A-Za-z\s\-]{7,}" title="Must contain only letters, spaces, and hyphens, with a minimum of  7 characters."></label>
-                <label class="top">Email*<input type="email" name="email"required placeholder="someone@gmail.com"></label>
-                <label class="top">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
-                </fieldset>
-                <fieldset>
-                <legend>Business/Organization Information</legend>
-                <label class="top">Business/Organization Name*<input type="text" name="organization" required></label>
-                <div>Membership Level:*</div>
-                    <label class="sbs"><input type="radio" name="audience" value="np">NP Membership (Free)</label>
-                    <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze Membership</label>
-                    <label class="sbs"><input type="radio" name="audience" value="silver">Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="audience" value="gold">Gold Membership</label>
-                
-                <label class="top">Business/Organization Description: <textarea name="description" id="description"></textarea></label>
-                <input type="hidden" name="timestamp" id="timestamp" value="Timestamp Placeholder">
-                </fieldset>
-                <input  type="submit" value="Join in" class="submitBtn">
-            </form>
+            <section>
+                <h1>Joining Form</h1>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name*<input type="text" name="first-name" required></label>
+                    <label class="top">Last Name*<input type="text" name="last-name" required></label>
+                    <label class="top">Title or Position<input type="text" name="position" pattern="[A-Za-z\s\-]{7,}" title="Must contain only letters, spaces, and hyphens, with a minimum of  7 characters."></label>
+                    <label class="top">Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone*<input type="tel" name="phone" required placeholder="1235551234"></label>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Business/Organization Information</legend>
+                    <label class="top">Business/Organization Name*<input type="text" name="organization" required></label>
+                    <div>Membership Level:*</div>
+                        <label class="sbs"><input type="radio" name="audience" value="np">NP Membership (Free)</label>
+                        <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="audience" value="silver">Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="audience" value="gold">Gold Membership</label>
+                    
+                    <label class="top">Business/Organization Description: <textarea name="description" id="description"></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp" value="Timestamp Placeholder">
+                    </fieldset>
+                    <input  type="submit" value="Join in" class="submitBtn">
+                </form>
+            </section>
+            
         </section>
     </main>
     
