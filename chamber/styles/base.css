@@ -349,3 +349,13 @@ form label.top textarea{
         padding: 2px 6px; /* Ajusta el espaciado de las celdas para dispositivos móviles */
     }
 }
+@media (max-width: 370px) {
+    table {
+        width: 100%;
+        font-size: 4px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+
+    th, td {
+        padding: 1px 3px; /* Ajusta el espaciado de las celdas para dispositivos móviles */
+    }
+}
