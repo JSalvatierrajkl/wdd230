@@ -20,8 +20,8 @@ const visitsDisplay = document.getElementById("visits");
 // Get the stored value in Local Storage
 let numVisits = window.localStorage.getItem("visits-ls");
 if (numVisits === null) {
-  // If there's no stored value, initialize it to 0
-  numVisits = 0;
+  // If there's no stored value, initialize it to 1
+  numVisits = 1;
 } else {
   // If there's a stored value, parse it as an integer
   numVisits = parseInt(numVisits);
