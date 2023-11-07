@@ -1,0 +1,65 @@
+{
+    "wardMembers": [
+      {
+        "familyName": "Salvatierra",
+        "moveInDate": "2004-06-15",
+        "numberOfPeople": 6,
+        "visitedByBishopric": true,
+        "familyMembers": [
+          {
+            "name": "Gerardo Salvatierra",
+            "gender": "Male",
+            "birthdate": "1966-05-20"
+          },
+          {
+            "name": "Ana Maria Salvatierra",
+            "gender": "Female",
+            "birthdate": "1970-08-10"
+          },
+          {
+            "name": "Lucas Salvatierra",
+            "gender": "Male",
+            "birthdate": "1995-03-05"
+          },
+          {
+            "name": "Joel Salvatierra",
+            "gender": "Male",
+            "birthdate": "2000-03-10"
+          },
+          {
+            "name": "Nayla Salvatierra",
+            "gender": "Female",
+            "birthdate": "2002-01-30"
+          },
+          {
+            "name": "Tobias Salvatierra",
+            "gender": "Male",
+            "birthdate": "2003-11-28"
+          }
+        ]
+      },
+      {
+        "familyName": "Johnson",
+        "moveInDate": "2023-02-10",
+        "numberOfPeople": 3,
+        "visitedByBishopric": false,
+        "familyMembers": [
+          {
+            "name": "Robert Johnson",
+            "gender": "Male",
+            "birthdate": "1975-12-15"
+          },
+          {
+            "name": "Emily Johnson",
+            "gender": "Female",
+            "birthdate": "1980-03-25"
+          },
+          {
+            "name": "Olivia Johnson",
+            "gender": "Female",
+            "birthdate": "2012-07-12"
+          }
+        ]
+      }
+    ]
+  }
