@@ -445,7 +445,8 @@ form label.top textarea{
 }
 @media (max-width: 600px) {
     .list div {
-        font-size: 0.25rem;
+        grid-template-columns:1fr;
+        margin-bottom: 10px;
     }
 }
 
