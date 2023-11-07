@@ -112,20 +112,6 @@
                     "title": "The Fetch API Prophets"
                   }
               ]
-        },
-        {
-            "lesson": "10",
-            "links": [
-                  {
-                    "url": "",
-                    "title": ""
-                  },
-                  {
-                    "url": "",
-                    "title": ""
-                  }
-              ]
         }
-        
     ]   
 }

@@ -1,41 +1,29 @@
-const baseURL = "https://jsalvatierrajkl.github.io/wdd230/"; 
+const baseURL = "https://jsalvatierrajkl.github.io/wdd230/";
 const linksURL = "https://jsalvatierrajkl.github.io/wdd230/data/links.json"; 
-const cards = document.querySelector('#activities');
 
 async function getLinks() {
+  try {
     const response = await fetch(linksURL);
+    if (!response.ok) {
+      throw new Error('Network response was not ok.');
+    }
     const data = await response.json();
-    console.log(data); // Testing
-    displayLinks(data);
+    displayLinks(data.lessons);
+  } catch (error) {
+    console.error('Error fetching data:', error);
   }
-  
-  getLinks();
+}
 
-  function displayLinks(weeks) {
-    const linksSection = document.getElementById("#activities"); 
+function displayLinks(lessons) {
+    const linksContainer = document.querySelector('#activity-links');
   
-    weeks.forEach((week) => {
-      const weekDiv = document.createElement("div");
-      weekDiv.className = "week";
-  
-      const weekHeading = document.createElement("h3");
-      weekHeading.textContent = `Week ${week.lesson}`;
-  
-      const linksList = document.createElement("ul");
-  
-      week.links.forEach((link) => {
-        const listItem = document.createElement("li");
-        const anchor = document.createElement("a");
-  
-        anchor.href = baseURL + link.url;
-        anchor.textContent = link.title;
-  
-        listItem.appendChild(anchor);
-        linksList.appendChild(listItem);
-      });
-  
-      weekDiv.appendChild(weekHeading);
-      weekDiv.appendChild(linksList);
-      linksSection.appendChild(weekDiv);
+    lessons.forEach((lesson) => {
+      const lessonText = `Lesson ${lesson.lesson}: ${lesson.links.map((link) => {
+        return `<a href="${link.url}" target="_blank">${link.title}</a>`;
+      }).join(' | ')}`;
+      const lessonElement = document.createElement('p');
+      lessonElement.innerHTML = lessonText;
+      linksContainer.appendChild(lessonElement);
     });
   }
+getLinks();
