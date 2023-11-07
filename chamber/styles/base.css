@@ -332,6 +332,7 @@ form label.top textarea{
     text-align: center;
 }
 #selector button{
+    height: 50px;
     padding: 8px 28px;
     border-radius: 20px;
     line-height: 24px;
