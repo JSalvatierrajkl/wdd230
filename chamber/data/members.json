@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Coca-Cola",
+        "address": "One Coca-Cola Plaza, Atlanta, GA 30313",
+        "phone": "+1 (800) 438-2653",
+        "website": "https://www.coca-cola.com/",
+        "image": "/cocacola-logo.webp",
+        "membership_level": "Gold",
+        "other_info": "Founded in 1892."
+      },
+      {
+        "name": "IBM",
+        "address": "1 New Orchard Road, Armonk, New York 10504-1722",
+        "phone": "+1 (914) 499-1900",
+        "website": "https://www.ibm.com/",
+        "image": "/IBM.webp",
+        "membership_level": "Platinum",
+        "other_info": "Founded in 1911."
+      },
+      {
+        "name": "McKinsey & Company",
+        "address": "55 East 52nd Street, New York, NY 10022",
+        "phone": "+1 (212) 446-7000",
+        "website": "https://www.mckinsey.com/",
+        "image": "McKinsey1.webp",
+        "membership_level": "Silver",
+        "other_info": "Founded in 1926."
+      },
+      {
+        "name": "Harvard Business School",
+        "address": "Soldiers Field, Boston, MA 02163",
+        "phone": "+1 (617) 495-6000",
+        "website": "https://www.hbs.edu/",
+        "image": "harvard.svg",
+        "membership_level": "Gold",
+        "other_info": "Founded in 1908."
+      },
+      {
+        "name": "Goldman Sachs",
+        "address": "200 West Street, New York, NY 10282",
+        "phone": "+1 (212) 902-1000",
+        "website": "https://www.goldmansachs.com/",
+        "image": "goldman.webp",
+        "membership_level": "Bronze",
+        "other_info": "Founded in 1869."
+      },
+      {
+        "name": "Boston Consulting Group",
+        "address": "One Beacon Street, Boston, MA 02108",
+        "phone": "+1 (617) 585-9000",
+        "website": "https://www.bcg.com/",
+        "image": "bcg.webp",
+        "membership_level": "Gold",
+        "other_info": "Founded in 1963."
+      },
+      {
+        "name": "Stanford Graduate School of Business",
+        "address": "655 Knight Way, Stanford, CA 94305",
+        "phone": "+1 (650) 723-2146",
+        "website": "https://www.gsb.stanford.edu/",
+        "image": "stanford.webp",
+        "membership_level": "Silver",
+        "other_info": "Founded in 1925."
+      }
+    ]
+  }

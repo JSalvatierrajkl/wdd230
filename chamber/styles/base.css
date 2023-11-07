@@ -293,6 +293,92 @@ form label.top textarea{
     width: 98%;
     height: 60px;
 }
+
+/*----------- MEMBERS --------------*/
+
+
+#selector{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 50px;
+}
+.grid img{
+    max-width: 200px;
+}
+.grid div{
+    display: grid;
+    border: 1px solid #FFB703;
+    background-color: #023047;
+    color: #FFB703;
+    border-radius: 3%;
+    box-shadow: 0 0 1px #282828, 0 0 5px #282828, 0 0 15px #282828, 0 0 30px #282828;
+    width: 80%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+#selector button{
+    padding: 8px 28px;
+    border-radius: 20px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #023047;
+    color: #FFB703;
+}
+#selector button:hover{
+    box-shadow: 0 0 5px #FB8500, 0 0 25px #FB8500, 0 0 50px #FB8500, 0 0 200px #FB8500;
+    background-color: #FB8500;
+    color: #023047;
+    transition: .5s;
+    font-weight: 700;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    padding: 50px;
+}
+
+.list div {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	margin: 0.25rem;
+}
+
+.list div img {
+	display: none; /* smaller viewports only */
+}
+
+.list div > * {
+	margin: 0 1rem;
+}
+
+
+.list div:nth-child(even) {
+	background-color: #FB8500;
+}
 @media screen and (max-width: 1200px) {
     #events-weather{
         display: grid;
