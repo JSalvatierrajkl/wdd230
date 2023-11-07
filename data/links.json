@@ -1,0 +1,131 @@
+{
+    "lessons": [
+        {
+          "lesson": "01",
+          "links": [
+                {
+                  "url": "lesson01/learning-activity-1.html",
+                  "title": "Learning Activity 1"
+                },
+                {
+                  "url": "lesson01/learning-activity-2.html",
+                  "title": "Learning Activity 2"
+                }
+          ] 
+        },
+        {
+          "lesson": "02",
+          "links": [
+                {
+                  "url": "lesson2/design-principles.html",
+                  "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                  {
+                    "url": "lesson3/week03.html",
+                    "title": "Activity 3"
+                  },
+                  {
+                    "url": "lesson3/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                  },
+                  {
+                    "url": "https://codepen.io/JSalvatierrajkl/pen/ZEVoego",
+                    "title": "Activity 4"
+                  },
+                  {
+                    "url": "https://codepen.io/JSalvatierrajkl/pen/JjwvNbQ",
+                    "title": "Activity 5"
+                  }
+              ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                  {
+                    "url": "https://codepen.io/JSalvatierrajkl/pen/YzdJjjy",
+                    "title": "Pseudo Classes Activity"
+                  }
+              ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                  {
+                    "url": "lesson5/bom.html",
+                    "title": "Media Queries"
+                  }
+              ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                  {
+                    "url": "lesson6/week06.html",
+                    "title": "WebP Image File Format Activity"
+                  },
+                  {
+                    "url": "lesson6/responsive-images.html",
+                    "title": "Responsive Images Activity"
+                  }
+              ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                  {
+                    "url": "lesson7/lazyload.html",
+                    "title": "Lazy Load Images"
+                  },
+                  {
+                    "url": "lesson7/bom.html",
+                    "title": "Book of Mormon Favorite Chapters localStorage"
+                  }
+              ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                  {
+                    "url": "lesson8/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                  },
+                  {
+                    "url": "HTML Forms",
+                    "title": "Design Principles Document"
+                  }
+              ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                  {
+                    "url": "lesson9/new-ward-members.json",
+                    "title": "JSON Activity"
+                  },
+                  {
+                    "url": "lesson9/prophets.html",
+                    "title": "The Fetch API Prophets"
+                  }
+              ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                  {
+                    "url": "",
+                    "title": ""
+                  },
+                  {
+                    "url": "",
+                    "title": ""
+                  }
+              ]
+        }
+        
+    ]   
+}
