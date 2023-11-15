@@ -63,9 +63,11 @@
                 <h3>Weather 🌞</h3>
                 <section id= "weather-information">
                     <!-- Placeholder information about weather, number of visits to the page, etc -->
-                    <span id="temperature">32</span> °F 🌡/
-                    <span id="windspeed">5</span> mph 🌫
-                    <p>⛱ Wind Chill: <span id="windchill">N/A</span></p>
+                    <div id="current-weather">
+                        <img id="weather-icon" src="" alt=""> <span id="current-temp"></span>  -  <figcaption></figcaption>
+                    </div>
+                    <h2>Three-Day Forecast</h2>
+                    <div id="forecast-container"></div>
                 </section>
             </section>
         </section>
@@ -119,9 +121,9 @@
         <p> <span id="currentYear"></span> Joel Salvatierra - Argentina</p>
         <p id="lastModified"></p>
     </footer>
-    <!-- <script src="/scripts/windchill.js"></script>
-    <script src="/scripts/script.js"></script> -->
-    <script src="/wdd230/scripts/script.js"></script>
-    <script src="/wdd230/scripts/windchill.js"></script>
+    <script src="/scripts/windchill.js"></script>
+    <script src="/scripts/script.js"></script>
+    <!-- <script src="/wdd230/scripts/script.js"></script>
+    <script src="/wdd230/scripts/windchill.js"></script> -->
 </body>
 </html>
