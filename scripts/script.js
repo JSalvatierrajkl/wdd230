@@ -49,4 +49,3 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "☁";
 	}
 });
-

@@ -156,6 +156,12 @@ main {
     }
 }
 
+#weather{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @media screen and (max-width: 500px) {
 
     .herolabel h2 {
