@@ -36,18 +36,19 @@ footer {
     padding: 10px;
     background-color: #023047;
     color: #FFB703;
+    
+}
+
+.footer-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-
-.footer-columns {
-    display: flex;
-    justify-content: space-between;
+.footer-left {
+    grid-column: 1/1;
 }
-
-.footer-column {
-    flex: 1;
+.footer-left {
+    grid-column: 1/1;
 }
 
 header {
