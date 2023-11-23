@@ -29,7 +29,7 @@ function renderMembers() {
         if (isGridView) {
           memberItem.innerHTML = `
             <h4>${member.name}</h4>
-            <img src="images/${member.image}" alt="${member.name}" />
+            <img src="images/${member.image}" alt="${member.name} logo" />
             <p>${member.address}</p>
             <a href="${member.website}" target="_blank">About Us</a>
             <p>Membership Level: ${member.membership_level}</p>
@@ -51,6 +51,3 @@ function renderMembers() {
       });
     });
 }
-
-// Initial rendering
-renderMembers();

@@ -5,7 +5,7 @@
         "address": "One Coca-Cola Plaza, Atlanta, GA 30313",
         "phone": "+1 (800) 438-2653",
         "website": "https://www.coca-cola.com/",
-        "image": "/cocacola-logo.webp",
+        "image": "cocacola-logo.webp",
         "membership_level": "Gold",
         "other_info": "Founded in 1892."
       },
@@ -14,7 +14,7 @@
         "address": "1 New Orchard Road, Armonk, New York 10504-1722",
         "phone": "+1 (914) 499-1900",
         "website": "https://www.ibm.com/",
-        "image": "/IBM.webp",
+        "image": "IBM.webp",
         "membership_level": "Platinum",
         "other_info": "Founded in 1911."
       },

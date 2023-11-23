@@ -18,8 +18,8 @@
     grid-column: 1/4;
     text-align: center;
 }
-.card-image{
-    width: 100%;
+.card-image, .news-image{
+    width: 80%;
     box-shadow: 0 0 3px #282828, 0 0 10px #282828, 0 0 25px #282828, 0 0 90px #282828;
     border-radius: 5%;
 }
@@ -35,21 +35,6 @@
     border-radius: 3%;
     margin-top: 80px
 }
-#members{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 20px;
-}
-.m-card{
-    padding: 30px;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #FFB703;
-    color: #023047;
-    border-radius: 3%;
-}
 .news-aboutus-container{
     display: grid;
     margin-left: 20%;
@@ -64,11 +49,6 @@
     width: 100%;
     box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
     border-radius: 5%;
-}
-.news-image{
-    width: 80%;
-    box-shadow: 0 0 5px #282828, 0 0 15px #282828, 0 0 35px #282828, 0 0 120px #282828;
-    border-radius: 3%;
 }
 
 #joinus{
@@ -305,7 +285,7 @@ form label.top textarea{
     align-items: center;
 }
 
-.grid {
+.grid, #memberContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 5px;
@@ -315,10 +295,12 @@ form label.top textarea{
     gap: 50px;
     padding: 50px 0px 100px 0px;
 }
-.grid img{
+.grid img, .member img{
     max-width: 200px;
 }
-.grid div{
+
+
+.member{
     display: grid;
     border: 1px solid #FFB703;
     background-color: #023047;
@@ -411,6 +393,26 @@ form label.top textarea{
     height: 50px;
 }
   
+/* BANNER*/
+
+.banner {
+    position: relative;
+    color: #FFB703;
+    padding: 30px;
+    background-color: #023047;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#closeBanner{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background-color: #023047;
+    font-size: 35px;
+    border: none;
+}
 @media screen and (max-width: 1200px) {
     #events-weather{
         display: grid;
@@ -496,5 +498,19 @@ form label.top textarea{
     }
     .grid img{
         max-width: 100px;
+    }
+    #events-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+        max-width: 300px;
+    }
+    #events-title{
+        grid-column: 1/1;
+    }
+    #weather-container {
+        padding: 10px;
     }
 }

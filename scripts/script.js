@@ -1,3 +1,9 @@
+// Redirect to the jois.html site
+document.getElementById("joinus").addEventListener("click", function() {
+	// Redirect to the joinus.html page
+	window.location.href = "join.html";
+});
+
 // Get the current year and populate it in the footer's first paragraph
 const currentYear = new Date().getFullYear();
 document.getElementById('currentYear').textContent = currentYear;
