@@ -13,6 +13,27 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+// Dark Mode
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("☁")) {
+		main.style.background = "#282828";
+		main.style.color = "#FFB703";
+		modeButton.textContent = "🌅";
+	} else {
+		main.style.background = "#FFB703";
+		main.style.color = "#023047";
+		modeButton.textContent = "☁";
+	}
+});
+
+// Redirect to the jois.html site
+document.getElementById("joinus").addEventListener("click", function() {
+	window.location.href = "join.html";
+});
+
 // Initialize display elements
 const visitsDisplay = document.getElementById("visits");
 const visitMessage = document.getElementById("visitMessage");
@@ -34,25 +55,5 @@ numVisits++;
 localStorage.setItem("visits-ls", numVisits);
 
 
-// Dark Mode
-const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
 
-modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("☁")) {
-		main.style.background = "#282828";
-		main.style.color = "#FFB703";
-		modeButton.textContent = "🌅";
-	} else {
-		main.style.background = "#FFB703";
-		main.style.color = "#023047";
-		modeButton.textContent = "☁";
-	}
-});
-
-// Redirect to the jois.html site
-document.getElementById("joinus").addEventListener("click", function() {
-	// Redirect to the joinus.html page
-	window.location.href = "join.html";
-});
 
