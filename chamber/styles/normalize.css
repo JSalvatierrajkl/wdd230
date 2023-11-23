@@ -44,13 +44,14 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
-.footer-left {
-    grid-column: 1/1;
+.footer-base{
+    display: flex;
+    justify-content: center;
 }
-.footer-left {
-    grid-column: 1/1;
+footer p {
+    margin-right: 25px;
+    margin-left: 25px;
 }
-
 header {
     text-align: left;
     padding: 20px;
@@ -149,7 +150,23 @@ nav li a {
     footer{
         min-width: 245px;
     }
-    /* small view navigation */
+
+    .footer-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+    }
+    
+    .footer-base{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    footer p {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
     #menu {
         display: block;
         font-size: 1.5rem;
