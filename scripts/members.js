@@ -51,3 +51,5 @@ function renderMembers() {
       });
     });
 }
+// Call the function RenderMembers
+renderMembers();
