@@ -1,8 +1,3 @@
-// Redirect to the jois.html site
-document.getElementById("joinus").addEventListener("click", function() {
-	// Redirect to the joinus.html page
-	window.location.href = "join.html";
-});
 
 
 // Get the last modified date and populate it in the second paragraph
@@ -54,3 +49,10 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "☁";
 	}
 });
+
+// Redirect to the jois.html site
+document.getElementById("joinus").addEventListener("click", function() {
+	// Redirect to the joinus.html page
+	window.location.href = "join.html";
+});
+
