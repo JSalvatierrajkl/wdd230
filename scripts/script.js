@@ -28,6 +28,7 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "☁";
 	}
 });
+
 //--------------BANNER---------------//
 document.addEventListener('DOMContentLoaded', function () {
 	// Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
