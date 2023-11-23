@@ -23,14 +23,16 @@ hamButton.addEventListener('click', () => {
 
 // Initialize display elements
 const visitsDisplay = document.getElementById("visits");
+const visitMessage = document.getElementById("visitMessage");
 // Get the stored value in Local Storage
 let numVisits = window.localStorage.getItem("visits-ls");
 if (numVisits === null) {
-  // If there's no stored value, initialize it to 1
-  numVisits = 1;
+	// If there's no stored value, initialize it to 1 and show a different message
+	numVisits = 1;
+	visitMessage.textContent = "This is the first time you visit us, you are very welcome!";
 } else {
-  // If there's a stored value, parse it as an integer
-  numVisits = parseInt(numVisits);
+	// If there's a stored value, parse it as an integer
+	numVisits = parseInt(numVisits);
 }
 // Display the number of visits
 visitsDisplay.textContent = numVisits;

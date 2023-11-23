@@ -12,7 +12,7 @@ function renderSpotlightMembers() {
             // Shuffle the spotlight members randomly
             const shuffledMembers = shuffleArray(spotlightMembers);
 
-            // Display only the first 2 or 3 members (randomly)
+            // Display only the first 3 members randomly
             const membersToShow = shuffledMembers.slice(0, Math.min(3, shuffledMembers.length));
 
             membersToShow.forEach(member => {
