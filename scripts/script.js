@@ -28,6 +28,25 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "☁";
 	}
 });
+//--------------BANNER---------------//
+document.addEventListener('DOMContentLoaded', function () {
+	// Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+	const currentDay = new Date().getDay();
+  
+	// Check if it's Monday, Tuesday, or Wednesday
+	if (currentDay >= 1 && currentDay <= 3) {
+		// Show the banner
+		const banner = document.getElementById('meetBanner');
+		banner.style.display = 'block';
+  
+		// Add event listener to the close button
+		const closeBannerButton = document.getElementById('closeBanner');
+		closeBannerButton.addEventListener('click', function () {
+			// Hide the banner when the close button is clicked
+			banner.style.display = 'none';
+		});
+	}
+  });
 
 // Redirect to the jois.html site
 document.getElementById("joinus").addEventListener("click", function() {

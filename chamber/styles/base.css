@@ -341,6 +341,7 @@ form label.top textarea{
 	display: flex;
 	flex-direction: column;
     padding: 50px;
+    align-items: center;
 }
 
 .list div {
@@ -480,7 +481,7 @@ form label.top textarea{
 @media (max-width: 600px) {
     .list div {
         grid-template-columns:1fr;
-        margin-bottom: 10px;
+        padding: 10px;
     }
 }
 
