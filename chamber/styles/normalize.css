@@ -36,7 +36,20 @@ footer {
     padding: 10px;
     background-color: #023047;
     color: #FFB703;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+}
+
 header {
     text-align: left;
     padding: 20px;
