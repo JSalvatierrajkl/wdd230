@@ -52,6 +52,11 @@ footer p {
     margin-right: 25px;
     margin-left: 25px;
 }
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 header {
     text-align: left;
     padding: 20px;
