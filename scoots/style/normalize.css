@@ -1,47 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik:wght@300;400;500&display=swap');
-/*Colors: (#282828 gray) #8ECAE6; #219EBC; #023047; #FFB703; #FB8500*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif&family=Rubik:wght@300;400;500&family=Source+Code+Pro:ital@1&display=swap');
+/*Colors: #363636, #2D333B, #242F40, #786A3E, #CCA43B, #D9C590, #E5E5E5, #FFFFFF*/
+
 body {
     /*font-family: 'PT Serif', serif;*/
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Source Code Pro', sans-serif;
     font-size: 20px;
-    color: #023047;
-    background-color: #282828;
+    color: #CCA43B;
+    background-color: #242F40;
 }
 h1, h2, h3{
-    font-family:'PT Serif', serif;
+    font-family:'Bebas Neue', serif;
     font-size: 50px; 
     text-align: center;
 }
+h4{
+    font-size: 30px;
+}
+#logo {
+    height: 150px;
+}
 header {
+    text-align: left;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #363636;
+}
+nav ul {
+    display: grid;
     justify-content: space-around;
     list-style-type: none;
     padding: 0;
-    background-color: #023047;
+    background-color: #363636;
     align-items: center;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+    gap: 125px;
 }
-#logo {
-    height: 115px;
+
+nav li {
+    display: inline;
 }
-#mode {
-	font-size: 3rem;
-	cursor: pointer;
+
+nav li a {
+    display: block;
+    color: #CCA43B;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+
 }
-main{
-    background-color: #FFB703;
+.active::before {
+    content: "🛵";
+}
+#menu{
+    display: none;
+}
+
+.navigation li a:hover {
+    box-shadow: 0 0 5px #D9C590, 0 0 25px #D9C590, 0 0 50px #D9C590, 0 0 200px #D9C590;
+    background-color: #D9C590;
+    color: #242F40;
+    transition: .5s;
+    font-weight: 700;
 }
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #023047;
-    color: #FFB703;
+    background-color: #363636;
+    color: #CCA43B;
     
 }
-
+#social-media-footer{
+    width: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
 .footer-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .footer-base{
@@ -57,64 +99,13 @@ footer p {
     flex-direction: column;
     justify-content: center;
 }
-header {
-    text-align: left;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: center;
-    justify-items: center;
-}
-nav ul {
-    display: grid;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-    background-color: #023047;
-    align-items: center;
-    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
-    gap: 125px;
-}
 
-nav li {
-    display: inline;
-}
-
-nav li a {
-    display: block;
-    color: #FFB703;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-
-}
-.active::before {
-    content: "🟠 ";
-}
-#menu{
-    display: none;
-}
-
-.navigation li a:hover {
-    box-shadow: 0 0 5px #FB8500, 0 0 25px #FB8500, 0 0 50px #FB8500, 0 0 200px #FB8500;
-    background-color: #FB8500;
-    color: #023047;
-    transition: .5s;
-    font-weight: 700;
+.smf-logo{
+    width: 30%;
 }
 
 @media screen and (max-width: 1200px) {
 
-    .form {
-        margin: 0 auto;
-        margin-top: 50px;
-        border-radius: 5px;
-        color: white;
-        background-color: #275434;
-        padding: 20px;
-        width: 350px;
-        font-family: "Rubik Dirt", Arial, sans-serif;;
-      }
     header {
         text-align: center;
         min-width: 245px;
@@ -131,8 +122,8 @@ nav li a {
         list-style-type: none;
         display: block;
         padding: 5px;
-        background-color: #023047;
-        color: #FFB703;
+        background-color: #363636;
+        color: #CCA43B;
         text-decoration: none;
         align-items: center;
         margin: 0 auto;
@@ -146,14 +137,60 @@ nav li a {
     
     nav li a {
         display: block;
-        color: #FFB703;
+        color: #CCA43B;
         padding: 5px;
         text-align: center;
         text-decoration: none;
     }
-    
+    #menu {
+        display: block;
+        font-size: 3rem;
+        padding: 3px 7px 6px;
+        border: 0px;
+        background-color: #363636;
+        color: #CCA43B;
+        position: absolute;
+        top: 10px; 
+        right: 10px; 
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "✖";
+    }
+    .navigation {
+        flex-direction: column;
+        list-style: none;
+        background-color: #363636;
+        color: #CCA43B;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #FFB703;
+    }
+    /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
     footer{
         min-width: 245px;
+    }
+
+    footer p {
+        font-size: 15px;
     }
 
     .footer-columns {
@@ -172,53 +209,11 @@ nav li a {
         margin-right: 0px;
         margin-left: 0px;
     }
-    #menu {
-        display: block;
-        font-size: 1.5rem;
-        padding: 3px 7px 6px;
-        background-color: #023047;
-        color: #FFB703;
-        position: absolute;
-        top: 10px; 
-        right: 10px; 
-    }
-
-    #menu::before {
-        content: "☰";
-    }
-
-    #menu.open::before {
-        content: "✖";
-    }
-
-    .navigation {
-        flex-direction: column;
-        list-style: none;
-        background-color: #023047;
-        color: #FFB703;
-    }
-    .navigation li {
-        display: none;
-    }
-    .navigation li a {
-        display: block;
-        padding: 1rem;
-        text-align: center;
-        text-decoration: none;
-        color: #FFB703;
-    }
-    #mode {
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-    .open li {
-        display: block;
+    #social-media-footer{
         width: 100%;
+
     }
-    .open li a {
-        display: block;
+    .smf-logo{
+        width: 20%;
     }
-    
-}
+}    

@@ -1,0 +1,120 @@
+
+#hero {
+    position: relative;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#rental-btn{
+    padding: 8px 28px;
+    border-radius: 20px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #CCA43B;
+    color: #242F40;
+}
+#rental-btn:hover, #social-media-links img:hover{
+    box-shadow: 0 0 5px #D9C590, 0 0 25px #D9C590, 0 0 50px #D9C590, 0 0 200px #D9C590;
+    background-color: #D9C590;
+    color: #023047;
+    transition: .5s;
+    font-weight: 700;
+}
+
+#summary {
+    text-align: center;
+    padding: 2em;
+}
+
+/*--------------------- weather -------------------------------*/
+#weather-container{
+    display: grid;
+    justify-content: center;
+}
+#current-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+}
+#weather-information {
+    border-color: #023047;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #CCA43B;
+    text-align: center;
+    max-width: 800px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+  
+#forecast-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+  
+.forecast-item {
+    text-align: center;
+}
+  
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}
+.hidden {
+    display: none;
+}
+
+#weatherAlertContainer{
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #D9C590;
+    color: #2D333B;
+}
+#closeWeatherAlert{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+    background-color: #D9C590;
+    border: none;
+    cursor: pointer;
+}
+/*-------- Social Media Links----------*/
+#social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#social-media p{
+    padding-bottom: 50px;
+}
+.social-media-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+}
+.sm-logo{
+    width: 20%;
+}
