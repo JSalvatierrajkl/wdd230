@@ -24,17 +24,17 @@
             <button id="menu"></button>
             <ul class="navigation">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#rentals">Rentals</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
         <picture>
-            <source srcset="images/hero_small.webp" media="(max-width: 500px)">
-            
+            <source srcset="/scoots/images/home_hero_small.webp" media="(max-width: 500px)">
+            <source srcset="images/home_hero_medium.webp" media="(max-width: 1200px)">
             <img src="/scoots/images/home_hero.webp" alt="Cozumel Island Hero Image" id = 'hero-img' width="1600" height="532">
           </picture>
         
@@ -46,29 +46,54 @@
             <button id="closeWeatherAlert">❌</button>
             <p id="weatherAlertMessage"></p>
         </div>
+        <h1>Welcome to CozuScoots Your Gateway to Cozumel Adventure!</h1>
         <div id="summary">
-            <h1>Welcome to CozuScoots Motor Scooter Rentals</h1>
-            <p>Your gateway to exploring the beautiful Cozumel Island on two wheels or four!</p>
-            <p>Choose from our fleet of motor scooters, ATVs, and jeeps. Fun and adventure await you!</p>
-        </div>
-
-        <!-- Weather Section -->
-        <section id="weather-container">
-            <h3>Weather 🌞</h3>
-            <section id= "weather-information">
-                <div id="current-weather">
-                    <h4>Today</h4>
-                    <figcaption></figcaption>
-                    <span id="current-temp"></span> 
-                </div>
-                <div id="forecast">
-                    <h4>Tomorrow</h4>
-                    <div id="forecast-container">
-
-                    </div>
-                </div>
+            <section class="summaries">
+                <h4>🌴 Embrace the spirit of fun and freedom as you step into the vibrant world of CozuScoots! </h4>
+                <p>Nestled on the sun-kissed island of Cozumel, we are your premier destination for unforgettable adventures and hassle-free rentals.</p>
             </section>
-        </section>
+            <section class="summaries">
+                <h4>✨ Experience the Extraordinary:</h4>
+                <p>Discover the thrill of exploring Cozumel in style with our diverse fleet of vehicles. From trendy motor scooters to rugged ATVs and versatile jeeps, CozuScoots brings you a range of options to suit every adventurer's preference.</p>
+            </section>
+            <section class="summaries">
+                <h4>🏞️ Unlock Cozumel's Hidden Gems:</h4>
+                <p>Immerse yourself in the beauty of Cozumel's landscapes. Our rentals are your keys to unlocking hidden gems, from picturesque coastal roads to off-road trails that lead to breathtaking vistas. Get ready to create memories that last a lifetime.</p>
+            </section>
+            <section class="summaries">
+                <h4>🚗 Seamless Rentals, Unmatched Freedom:</h4>
+                <p>At CozuScoots, we redefine convenience. With easy reservation processes, flexible rental durations, and a variety of payment options, we ensure your journey begins with a smooth start. Unleash the freedom to explore at your own pace.</p>
+            </section>
+        </div>
+        <div id="serv-weath-container">
+            <div id="services">
+                <h2>Our Services</h2>
+                <h4>🛵Motor Scooters</h4>
+                <p>Effortless Exploration: Our motor scooters offer a convenient and stylish way to explore Cozumel. Whether you're zipping through narrow streets or cruising along the coastline, these scooters provide an effortless and enjoyable experience.</p>
+                <h4>🚘ATVs (All-Terrain Vehicles)</h4>
+                <p>Off-Road Adventure: For thrill-seekers and adventure enthusiasts, our ATVs are the key to unlocking Cozumel's off-road treasures. Dive into rugged terrains, navigate through scenic trails, and experience an adrenaline-pumping adventure with friends or family.</p>
+                <h4>🚙Jeeps</h4>
+                <p>Versatile Excursions: Jeeps offer a versatile and comfortable mode of transportation, allowing you to tailor your island experience. Cruise the streets with the wind in your hair or venture off the beaten path for a more rugged adventure. Ideal for families or groups, jeeps provide a customizable and memorable journey.</p>
+            </div>
+
+            <!-- Weather Section -->
+            <section id="weather-container">
+                <h3>Weather 🌞</h3>
+                <section id= "weather-information">
+                    <div id="current-weather">
+                        <h4>Today</h4>
+                        <figcaption></figcaption>
+                        <span id="current-temp"></span> 
+                    </div>
+                    <div id="forecast">
+                        <h4>Tomorrow</h4>
+                        <div id="forecast-container">
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
         <div id="social-media">
             <h3>Know Us</h3>
             <p>You can know more about us through our social media or contacting us via email</p>

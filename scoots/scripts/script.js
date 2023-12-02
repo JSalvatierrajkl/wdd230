@@ -7,3 +7,10 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+// Reservation Button
+const rentalBtn = document.getElementById("rental-btn");
+
+rentalBtn.addEventListener("click", function() {
+	window.location.href = "reservations.html";
+});

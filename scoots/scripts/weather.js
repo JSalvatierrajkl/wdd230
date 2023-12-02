@@ -9,9 +9,6 @@ const latitude = 20.507398813879846;
 const longitude = -86.94347216205391;
 const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 
-// Initialize alert elements
-const alertContainer = document.getElementById('weatherAlertContainer');
-const closeAlertButton = document.getElementById('closeWeatherAlert');
 
 async function apiFetch() {
   try {
@@ -59,6 +56,9 @@ function displayForecast(data) {
     forecastContainer.appendChild(forecastItem);
   }
 }
+// Alert
+// Initialize alert elements
+const alertContainer = document.getElementById('weatherAlertContainer');
 
 function checkWeatherAlert(data) {
     const currentWeather = data.list[0];
@@ -75,6 +75,16 @@ function displayAlert(message) {
     closeAlertButton.addEventListener('click', function () {
       alertContainer.style.display = 'none';
     });
+}
+
+function displayAlert(message) {
+  alertContainer.innerHTML = `<p>${message}</p>
+    <button id="closeWeatherAlert">❌</button>`;
+
+  const closeAlertButton = document.getElementById('closeWeatherAlert');
+  closeAlertButton.addEventListener('click', function () {
+    alertContainer.style.display = 'none';
+  });
 }
 
 

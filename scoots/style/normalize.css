@@ -9,10 +9,16 @@ body {
     color: #CCA43B;
     background-color: #242F40;
 }
-h1, h2, h3{
+
+h2, h3{
     font-family:'Bebas Neue', serif;
     font-size: 50px; 
     text-align: center;
+}
+h1{
+    font-family:'Bebas Neue', serif;
+    text-align: center;
+    font-size: 70px;
 }
 h4{
     font-size: 30px;
@@ -204,6 +210,7 @@ footer p {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
+        gap: 10px;
     }
     footer p {
         margin-right: 0px;
@@ -216,4 +223,19 @@ footer p {
     .smf-logo{
         width: 20%;
     }
-}    
+    h1{
+        font-size: 50px;
+    }
+    h2, h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 23px;
+    }
+}   
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 40px;
+    }
+
+} 
