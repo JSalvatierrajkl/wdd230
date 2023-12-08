@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joel Salvatierra - WDD 230 - Chamber of Commerce Site</title>
-    <meta name="description" content="This is the WDD 230 - Web Frontend Development course assignment portal made by Joel Salvatierra. Here I applied every adquired knowledge to make a chamber of commerce site where the focus is implemented on give to users the capacity to find contacts, dates, activities and more." />
+    <meta name="description" content="This is the WDD 230 - Web Frontend Development course final project made by Joel Salvatierra. Here I applied every adquired knowledge to make a Motor Scooter Rentals site where the focus is implemented on give to users the capacity to find vehicles, prices, data and more." />
     <meta name="author" content="Joel Salvatierra" />
     <link rel="icon" href="/wdd230/scoots/images/favicon.ico">
     <link rel="stylesheet" href="style/normalize.css">
@@ -23,87 +23,89 @@
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/scoots/index.html" class="active">Home</a></li>
+                <li><a href="/scoots/rental.html">Rentals</a></li>
+                <li><a href="/scoots/reservations.html">Reservations</a></li>
+                <li><a href="/scoots/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="home">
-        <picture>
-            <source srcset="/scoots/images/home_hero_small.webp" media="(max-width: 500px)">
-            <source srcset="images/home_hero_medium.webp" media="(max-width: 1200px)">
-            <img src="/scoots/images/home_hero.webp" alt="Cozumel Island Hero Image" id = 'hero-img' width="1600" height="532">
-          </picture>
-        
-        <div id="hero">
-            <button id="rental-btn">Make a Reservation</button>
-        </div>
-
-        <div id="weatherAlertContainer" class="alert-container">
-            <button id="closeWeatherAlert">❌</button>
-            <p id="weatherAlertMessage"></p>
-        </div>
-        <h1>Welcome to CozuScoots Your Gateway to Cozumel Adventure!</h1>
-        <div id="summary">
-            <section class="summaries">
-                <h4>🌴 Embrace the spirit of fun and freedom as you step into the vibrant world of CozuScoots! </h4>
-                <p>Nestled on the sun-kissed island of Cozumel, we are your premier destination for unforgettable adventures and hassle-free rentals.</p>
-            </section>
-            <section class="summaries">
-                <h4>✨ Experience the Extraordinary:</h4>
-                <p>Discover the thrill of exploring Cozumel in style with our diverse fleet of vehicles. From trendy motor scooters to rugged ATVs and versatile jeeps, CozuScoots brings you a range of options to suit every adventurer's preference.</p>
-            </section>
-            <section class="summaries">
-                <h4>🏞️ Unlock Cozumel's Hidden Gems:</h4>
-                <p>Immerse yourself in the beauty of Cozumel's landscapes. Our rentals are your keys to unlocking hidden gems, from picturesque coastal roads to off-road trails that lead to breathtaking vistas. Get ready to create memories that last a lifetime.</p>
-            </section>
-            <section class="summaries">
-                <h4>🚗 Seamless Rentals, Unmatched Freedom:</h4>
-                <p>At CozuScoots, we redefine convenience. With easy reservation processes, flexible rental durations, and a variety of payment options, we ensure your journey begins with a smooth start. Unleash the freedom to explore at your own pace.</p>
-            </section>
-        </div>
-        <div id="serv-weath-container">
-            <div id="services">
-                <h2>Our Services</h2>
-                <h4>🛵Motor Scooters</h4>
-                <p>Effortless Exploration: Our motor scooters offer a convenient and stylish way to explore Cozumel. Whether you're zipping through narrow streets or cruising along the coastline, these scooters provide an effortless and enjoyable experience.</p>
-                <h4>🚘ATVs (All-Terrain Vehicles)</h4>
-                <p>Off-Road Adventure: For thrill-seekers and adventure enthusiasts, our ATVs are the key to unlocking Cozumel's off-road treasures. Dive into rugged terrains, navigate through scenic trails, and experience an adrenaline-pumping adventure with friends or family.</p>
-                <h4>🚙Jeeps</h4>
-                <p>Versatile Excursions: Jeeps offer a versatile and comfortable mode of transportation, allowing you to tailor your island experience. Cruise the streets with the wind in your hair or venture off the beaten path for a more rugged adventure. Ideal for families or groups, jeeps provide a customizable and memorable journey.</p>
+    <main>
+        <section id="home">
+            <picture>
+                <source srcset="/scoots/images/home_hero_small.webp" media="(max-width: 500px)">
+                <source srcset="images/home_hero_medium.webp" media="(max-width: 1200px)">
+                <img src="/scoots/images/home_hero.webp" alt="Cozumel Island Hero Image" id = 'hero-img' width="1600" height="532">
+              </picture>
+          
+            <div id="hero">
+                <button id="rental-btn">Make a Reservation</button>
             </div>
 
-            <!-- Weather Section -->
-            <section id="weather-container">
-                <h3>Weather 🌞</h3>
-                <section id= "weather-information">
-                    <div id="current-weather">
-                        <h4>Today</h4>
-                        <figcaption></figcaption>
-                        <span id="current-temp"></span> 
-                    </div>
-                    <div id="forecast">
-                        <h4>Tomorrow</h4>
-                        <div id="forecast-container">
-
-                        </div>
-                    </div>
+            <div id="weatherAlertContainer" class="alert-container">
+                <button id="closeWeatherAlert">❌</button>
+                <p id="weatherAlertMessage"></p>
+            </div>
+            <h1>Welcome to CozuScoots Your Gateway to Cozumel Adventure!</h1>
+            <div id="summary">
+                <section class="summaries">
+                    <h4>🌴 Embrace the spirit of fun and freedom as you step into the vibrant world of CozuScoots! </h4>
+                    <p>Nestled on the sun-kissed island of Cozumel, we are your premier destination for unforgettable adventures and hassle-free rentals.</p>
                 </section>
-            </section>
-        </div>
-        <div id="social-media">
-            <h3>Know Us</h3>
-            <p>You can know more about us through our social media or contacting us via email</p>
-            <div class="social-media-links">
-                <a href="www.facebook.com"> <img class = "sm-logo" src="images/facebook.png" alt="Facebook"> </a>
-                <a href="www.instagram.com"> <img class = "sm-logo" src="images/instagram.png" alt="Instagram"> </a>
-                <a href="#contact"> <img class = "sm-logo" src="images/mail.png" alt="Mail"> </a>
+                <section class="summaries">
+                    <h4>✨ Experience the Extraordinary:</h4>
+                    <p>Discover the thrill of exploring Cozumel in style with our diverse fleet of vehicles. From trendy motor scooters to rugged ATVs and versatile jeeps, CozuScoots brings you a range of options to suit every adventurer's preference.</p>
+                </section>
+                <section class="summaries">
+                    <h4>🏞️ Unlock Cozumel's Hidden Gems:</h4>
+                    <p>Immerse yourself in the beauty of Cozumel's landscapes. Our rentals are your keys to unlocking hidden gems, from picturesque coastal roads to off-road trails that lead to breathtaking vistas. Get ready to create memories that last a lifetime.</p>
+                </section>
+                <section class="summaries">
+                    <h4>🚗 Seamless Rentals, Unmatched Freedom:</h4>
+                    <p>At CozuScoots, we redefine convenience. With easy reservation processes, flexible rental durations, and a variety of payment options, we ensure your journey begins with a smooth start. Unleash the freedom to explore at your own pace.</p>
+                </section>
             </div>
-        </div>
-    </section>
+            <div id="serv-weath-container">
+                <div id="services">
+                    <h2>Our Services</h2>
+                    <h4>🛵Motor Scooters</h4>
+                    <p>Effortless Exploration: Our motor scooters offer a convenient and stylish way to explore Cozumel. Whether you're zipping through narrow streets or cruising along the coastline, these scooters provide an effortless and enjoyable experience.</p>
+                    <h4>🚘ATVs (All-Terrain Vehicles)</h4>
+                    <p>Off-Road Adventure: For thrill-seekers and adventure enthusiasts, our ATVs are the key to unlocking Cozumel's off-road treasures. Dive into rugged terrains, navigate through scenic trails, and experience an adrenaline-pumping adventure with friends or family.</p>
+                    <h4>🚙Jeeps</h4>
+                    <p>Versatile Excursions: Jeeps offer a versatile and comfortable mode of transportation, allowing you to tailor your island experience. Cruise the streets with the wind in your hair or venture off the beaten path for a more rugged adventure. Ideal for families or groups, jeeps provide a customizable and memorable journey.</p>
+                </div>
+
+                <!-- Weather Section -->
+                <section id="weather-container">
+                    <h3>Weather 🌞</h3>
+                    <section id= "weather-information">
+                        <div id="current-weather">
+                            <h4>Today</h4>
+                            <figcaption></figcaption>
+                            <span id="current-temp"></span> 
+                        </div>
+                        <div id="forecast">
+                            <h4>Tomorrow</h4>
+                            <div id="forecast-container">
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div id="social-media">
+                <h3>Know Us</h3>
+                <p>You can know more about us through our social media or contacting us via email</p>
+                <div class="social-media-links">
+                    <a href="www.facebook.com"> <img class = "sm-logo" src="images/facebook.png" alt="Facebook"> </a>
+                    <a href="www.instagram.com"> <img class = "sm-logo" src="images/instagram.png" alt="Instagram"> </a>
+                    <a href="#contact"> <img class = "sm-logo" src="images/mail.png" alt="Mail"> </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
     <!-- Footer Section -->
     <footer>

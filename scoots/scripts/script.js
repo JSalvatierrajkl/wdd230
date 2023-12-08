@@ -14,3 +14,11 @@ const rentalBtn = document.getElementById("rental-btn");
 rentalBtn.addEventListener("click", function() {
 	window.location.href = "reservations.html";
 });
+
+// // Submit Button Button
+// const submitBtn = document.querySelector(".submitBtn");
+
+// rentalBtn.addEventListener("click", function() {
+// 	window.location.href = "thanks.html";
+// });
+

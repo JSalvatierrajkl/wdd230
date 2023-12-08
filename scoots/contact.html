@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joel Salvatierra - WDD 230 - Chamber of Commerce Site</title>
+    <meta name="description" content="This is the WDD 230 - Web Frontend Development course final project made by Joel Salvatierra. Here I applied every adquired knowledge to make a Motor Scooter Rentals site where the focus is implemented on give to users the capacity to find vehicles, prices, data and more." />
+    <meta name="author" content="Joel Salvatierra" />
+    <link rel="icon" href="/wdd230/scoots/images/favicon.ico">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" />
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
+    <meta property="og:title" content="Joel Salvatierra" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/bsas.jpg" />
+    <meta property="og:url" content="https://jsalvatierrajkl.github.io/wdd230/" />
+</head>
+<body>
+    <header>
+        <a href="index.html"> <img id = "logo" src="images/cozuscoots.png" alt="Cozu Scoots logo"> </a>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="/scoots/index.html" >Home</a></li>
+                <li><a href="/scoots/rental.html">Rentals</a></li>
+                <li><a href="/scoots/reservations.html">Reservations</a></li>
+                <li><a href="/scoots/contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <div id="contact-intro">
+                <h1>Know More About Us</h1>
+                <p>Embark on your Cozumel adventure! Have questions or need assistance? We've got you covered!</p>
+                <p>Our dedicated team is here to make your experience unforgettable. Whether you're cruising the island on one of our sleek motor scooters, exploring off-road with our     ATVs, or hitting the scenic routes in a Jeep, we're just a message away!</p>
+                <p>Feel the breeze, soak in the sun, and let us handle the details. Contact us for the ride of a lifetime!</p>
+            </div>
+            <div class="map-container">
+                <h3>Visit Our Locations:</h3>
+                <iframe src="https://www.google.com/maps/d/embed?mid=19-3DJ9-aFjoCtBVBwzQAGHqYUrK0RgE&ehbc=2E312F" width="640" height="540"></iframe>
+            </div>
+            <div>
+            <h3>Contact Us</h3>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                    <legend>Contacting Information</legend>
+                    <label class="top">First Name*<input type="text" name="first-name" required></label>
+                    <label class="top">Last Name*<input type="text" name="last-name" required></label>
+                    <label class="top">Email*<input type="email" name="email" required placeholder="example@exp.com"></label>
+                    <label class="top">Comments:<textarea name="description" id="description"></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp" value="Timestamp Placeholder">
+                    </fieldset>
+                    <input  type="submit" value="Send Comment" class="submitBtn">
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-columns">
+            <!-- Left Column -->
+            <div class="footer-left">
+                <a href="index.html"> <img id = "logo" src="images/cozuscoots.png" alt="Cozu Scoots logo"> </a>
+                <h4>Motor Scooter Rentals</h4>
+                
+            </div>
+            <div class="footer-right">
+                <p>Calle 2224, Cozumel,</p>
+                <p>Quintana Roo, Mexico</p>
+                <p>joeljsalvatierra@gmail.com</p>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-base">
+            <p>&copy; 2023 Cozu Scoots</p>
+            <p>Joel Salvatierra</p>
+            <p>WDD 230 Project</p>
+            <div id="social-media-footer">
+                <a href="www.facebook.com"> <img class = "smf-logo" src="images/facebook.png" alt="Facebook"> </a>
+                <a href="www.instagram.com"> <img class = "smf-logo" src="images/instagram.png" alt="Instagram"> </a>
+                <a href="#contact"> <img class = "smf-logo" src="images/mail.png" alt="Mail"> </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/scoots/scripts/weather.js"></script>
+    <script src="/scoots/scripts/script.js"></script>
+</body>
+</html>

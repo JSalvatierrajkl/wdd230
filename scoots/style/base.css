@@ -26,7 +26,7 @@
     background-color: #CCA43B;
     color: #242F40;
 }
-#rental-btn:hover, #social-media-links img:hover{
+#rental-btn:hover, #social-media-links img:hover, .submitBtn:hover{
     box-shadow: 0 0 5px #D9C590, 0 0 25px #D9C590, 0 0 50px #D9C590, 0 0 200px #D9C590;
     background-color: #D9C590;
     color: #023047;
@@ -149,6 +149,181 @@
 .sm-logo{
     width: 20%;
 }
+/* Rental*/
+/*----------- TABLE --------------*/
+:root {
+    --back: #D9C590;
+    --back2: #D3B566;
+    --forelight: #2D333B;
+    --border: hsla(0, 0%, 20%, 0.8);
+    --borderlight: hsla(0, 0%, 33%, 0.3);
+    --shadow: #CCA43B;
+    --zebra: #2D333B;
+    --zebrafont: #D9C590;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: 0px auto;
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: 0.85rem;
+}
+
+tr:first-child th {
+    background-color: var(--back2);
+    color: var(--forelight);
+}
+
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--back);
+    color: var(--forelight);
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: var(--zebra);
+    color: var(--zebrafont);
+}
+
+#rentals{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    margin: 20px;
+
+    align-items: center;
+}
+
+#rentals p {
+    text-align: justify;
+    margin: 0px auto;
+    margin-left: 7%;
+}
+
+#rentals h1 {
+    grid-column: 1/3;
+}
+
+/* Contact Us */
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 30px;
+    justify-items: center;
+}
+#contact-intro{
+    grid-column: 1/3;
+    max-width: 1000px;
+
+}
+#contact p {
+    text-align: justify;
+}
+/*----------- FORM --------------*/
+form {
+    margin: 2rem auto;
+    max-width: 600px;
+    background-color: #DFD5BB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 3%;
+}
+
+form fieldset{
+    margin: 2rem 0;
+    border: 2px solid #242F40;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend{
+    color: #242F40;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: #242F40;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select{
+    display: block;
+    font-size: 1rem;
+    border:solid 1px #000;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #666;
+    max-width: 20rem;
+    background-color: rgb(0,0,0,0.1);
+}
+
+form input.submitBtn{
+    display: block;
+    background-color: #242F40;
+    color: #CCA43B;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px
+}
+
+form label.top textarea{
+    font-size: 1rem;
+    width: 98%;
+    height: 60px;
+}
+
+.submitBtn{
+    padding: 8px 28px;
+    border-radius: 20px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    border: none;
+
+    background-color: #CCA43B;
+    color: #242F40;
+}
 
 @media screen and (max-width: 1200px) {
     #summary {
@@ -165,6 +340,41 @@
     h1{
         margin-top: 100px;
     }
+    #rentals{
+        grid-template-columns: 1fr;
+    }
+    #rentals h2 {
+        grid-column: 1/2;
+    }
+    table {
+    font-size: 15px;
+    }
+    #rentals p {
+        margin-left: 0%;
+    }
+    #contact {
+        grid-template-columns:1fr;
+    }
+    #contact-intro{
+        grid-column: 1/2;
+    }
+    .map-container iframe{
+        width: 450px ;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    table {
+        font-size: 7px;
+    }
+    main{
+        font-size: 15px;
+    }
+    .map-container iframe{
+        width: 300px ;
+        height: 450px;
+    }
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -174,5 +384,16 @@
     #summary h4{
         text-align: left;
     }
+    table {
+        font-size: 3px;
+    }
+    .map-container iframe{
+        width: 240px ;
+        height: 350px;
+    }
+    form label.top input, form label.top select {
+        width: 8rem;
+    }
+    
     
 }
