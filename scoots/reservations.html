@@ -10,11 +10,9 @@
     <link rel="icon" href="/wdd230/scoots/images/favicon.ico">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" type="text/css" href="style/base.css" />
-    <link rel="stylesheet" type="text/css" href="styles/medium.css" />
-    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
     <meta property="og:title" content="Joel Salvatierra" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/bsas.jpg" />
+    <meta property="og:image" content="images/cozuscoots.png" />
     <meta property="og:url" content="https://jsalvatierrajkl.github.io/wdd230/" />
 </head>
 <body>
@@ -23,17 +21,108 @@
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/scoots/index.html" >Home</a></li>
+                <li><a href="/scoots/rental.html">Rentals</a></li>
+                <li><a href="/scoots/reservations.html" class="active">Reservations</a></li>
+                <li><a href="/scoots/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        
+        <section id="reservation">
+            <h1>Rental Agreement Information</h1>
+            <section class="reservation-info">
+                <div>
+                    <h2>Types of Rentals</h2>
+                    <p>Before making a reservation, please review the rental agreement details below:</p>
+                </div>
+                <div>
+                    <section class="rental-type">
+                        <h4>Honda Motor Scooters</h4>
+                        <ul>
+                            <li>🛵 Honda Metropolitan (49cc) ➡ 1 person</li>
+                            <li>🛵 Honda Dio (110cc) ➡ 2 person</li>
+                            <li>🛵 Honda PCX150 (149cc) ➡ 2 person</li>
+                        </ul>
+                    </section>
+                    <section class="rental-type">
+                        <h4>Side-by-Side ATVs</h4>
+                        <ul>
+                            <li>🛺 Honda Pioneer 1000 ➡ 4 person</li>
+                        </ul>
+                    </section>
+                    <section class="rental-type">
+                        <h4>Jeeps</h4>
+                        <ul>
+                            <li>🚙 Jeep Wrangler - 4 door manual with A/C ➡ 5 person</li>
+                            <li>🚙 Jeep Wrangler - 2 door - open air - manual ➡ 4 person</li>
+                        </ul>
+                    </section>
+                </div>
+                <section id="rental-services">
+                    <h2>Rental Services and Agreements</h2>
+                    <ul>
+                        <li>💵 A $50 security deposit is required to confirm reservations.</li>
+                        <li>📄 A valid drivers license is required in hand at the time of rental.</li>
+                        <li>🚸 No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>⛽ Fuel charge is not included.</li>
+                        <li>🛣 Unlimited mileage.</li>
+                        <li>🛡 Liability insurance is included.</li>
+                        <li>💥 Damage insurance is available for purchase.</li>
+                        <li>🚐 Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>💳 Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                        <li>🏬 Rentals may be returned to either physical location.</li>                    
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <form method="get" action="thanks.html" id="reservation-form">
+                    <fieldset id="reservation-fieldset">
+                        <legend>Make your Reservation</legend>
+                        <div>
+                            <label class="top">First Name*<input type="text" name="first-name" required></label>
+                            <label class="top">Date*<input type="date" name="rental-date" required></label>
+                            <label class="top">Period*
+                                <div>
+                                    <input type="radio" id="half-day" name="rental-period" value="half-day" required>
+                                    <label for="half-day">Half Day</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="full-day" name="rental-period" value="full-day" required>
+                                    <label for="full-day">Full Day</label>
+                                </div>
+                            </label>
+                            <label class="top">Rental Type*
+                                <select name="rental-type" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="honda-metropolitan">Honda Metropolitan</option>
+                                    <option value="honda-dio">Honda Dio</option>
+                                    <option value="honda-pcx150">Honda PCX150</option>
+                                    <option value="honda-pioneer-atv">Honda Pioneer ATV</option>
+                                    <option value="jeep-wrangler-4-door">Jeep Wrangler - 4 door</option>
+                                    <option value="jeep-wrangler-2-door">Jeep Wrangler - 2 door</option>
+                                </select>
+                            </label>
+                            <label class="top">Number of Persons*<input type="number" name="persons" required min="1"></label>
+                        </div>
+                        <div id="second-column">
+                            
+                            <label class="top">Last Name*<input type="text" name="last-name" required></label>
+                        
+                        
+                            <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+                            <label class="top">Email*<input type="email" name="email" required placeholder="example@exp.com"></label>
+                            <label class="top">Home State or Country*<input type="text" name="home-location" required></label>
+                            <label class="top">Cruise Line (if applicable)<input type="text" name="cruise-line"></label>
+                        </div>
+                        <label id="comment">Special Accommodations/Comments<textarea name="comments"></textarea></label>
+                        <input type="hidden" name="timestamp" id="timestamp" value="Timestamp Placeholder">
+                    </fieldset>
+                    <input type="submit" value="Send Reservation" class="submitBtn">
+                </form>
+            </section>
+        </section>
     </main>
-
 
     <footer>
         <div class="footer-columns">
