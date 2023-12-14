@@ -335,7 +335,6 @@ form label.top textarea{
 }
 .reservation-info{
     margin: 50px;
-    padding-right: 500p;
     display: grid;
     gap: 20px;
     justify-content: center;
@@ -363,6 +362,24 @@ form label.top textarea{
 #reservation-form textarea{
     font-size: 1rem;
     height: 60px;
+}
+
+/*-----otherscreens------*/
+.thanks-reserved-container{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #CCA43B;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.thanks-reserved-container p{
+    font-size: 18px;
+    color: #242F40;
+}
+.thanks-reserved-container h1{
+    color: #242F40;
 }
 
 @media screen and (max-width: 1200px) {
@@ -426,7 +443,9 @@ form label.top textarea{
     form label.top, form div, form label.top input, form label.top select, #reservation-form textarea  {
         font-size: 1rem;
     }
-    
+    .thanks-reserved-container{
+        margin: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
