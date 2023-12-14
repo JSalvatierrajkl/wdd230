@@ -383,7 +383,7 @@ form label.top textarea{
     #rentals{
         grid-template-columns: 1fr;
     }
-    #rentals h2 {
+    #rentals h1 {
         grid-column: 1/2;
     }
     table {
